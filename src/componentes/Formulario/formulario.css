@@ -1,17 +1,40 @@
 .formulario-container {
     display: flex;
-    justify-content: center;
-    margin: 80px 0;
-
+    justify-content: flex-end;
+    margin: 80px 50px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
+
 .formulario-container .formulario {
-    max-width: 80%;
+    flex: 1;
     background: #F7F7F7;
     box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
     padding: 36px 64px;
 }
+
 .formulario-container .formulario h2 {
     font-weight: 400;
     font-size: 32px;
 }
+
+.div-form {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+button.btn.btn-ocultar {
+    width: 104px;
+    height: 44px;
+    background: #6278F7;
+    border-radius: 4px;
+    border: none;
+    background-repeat: no-repeat;
+    background-image: url(../../../public/imagens/mudanca.png
+);
+    background-position: center;
+}
+
+
