@@ -4,7 +4,7 @@ import Campo from "../Campo";
 import ListaSuspensa from "../ListaSuspensa";
 import "./formulario.css";
 
-const Formulario = ({ aoCadastrar, times, aoCadastrarTime,visivel }) => {
+const Formulario = ({ aoCadastrar, times, aoCadastrarTime }) => {
   const [nome, setNome] = useState("");
   const [cargo, setCargo] = useState("");
   const [imagem, setImagem] = useState("");
@@ -14,12 +14,18 @@ const Formulario = ({ aoCadastrar, times, aoCadastrarTime,visivel }) => {
 
   const aoSubmeter = (evento) => {
     evento.preventDefault();
-    // console.log("form enviado", nome, cargo, imagem, time);
+    console.log("form enviado", nome, cargo, imagem, time);
+    debugger
     aoCadastrar({
       nome,
       cargo,
       imagem,
+      time,
     });
+    setNome("");
+    setImagem("");
+    setCargo("");
+    setTime("");
   };
 
   return (
